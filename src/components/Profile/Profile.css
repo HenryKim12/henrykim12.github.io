@@ -1,0 +1,20 @@
+.profile {
+    display: block;
+    text-align: center;
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    width: 10%;
+    padding-left: 45%;
+}
+
+.social {
+    flex: 1 1 0;
+    width: 0;
+}
+
+.social:hover {
+    filter:opacity(0.45);
+  }
