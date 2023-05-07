@@ -1,7 +1,6 @@
 import React from 'react'
-import github from "./github.png"
-import linkedin from "./linkedin.png"
-import mail from "./mail.png"
+// import linkedin from "./linkedin.png"
+// import mail from "./mail.png"
 import "./Profile.css"
 
 const Profile = () => {
@@ -10,7 +9,7 @@ const Profile = () => {
         <h1>Henry Kim</h1>
         <h2>Computer Science Major, Year 3</h2>
         <p>I am looking for a position as a software engineer.</p>
-        <ul className="socials">
+        {/* <ul className="socials">
           <li className="social">
             <a href={"https://github.com/HenryKim12"} target="_blank" rel="noreferrer">
               <img src={github} alt="github icon" width="20px" height="20px"></img>
@@ -26,7 +25,7 @@ const Profile = () => {
               <img src={mail} alt="mail icon" width="20px" height="20px"></img>
             </a>
           </li>
-        </ul>
+        </ul> */}
     </div>
   )
 }
