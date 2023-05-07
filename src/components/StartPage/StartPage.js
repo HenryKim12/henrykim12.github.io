@@ -1,5 +1,6 @@
 import React from 'react'
 
+// TODO: add particle.ts or some react-spring stuff
 const StartPage = () => {
   return (
     <div>

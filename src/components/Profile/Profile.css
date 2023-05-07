@@ -1,20 +1,20 @@
 .profile {
-    display: block;
     text-align: center;
-}
-
-.socials {
-    list-style: none;
-    display: flex;
-    width: 10%;
-    padding-left: 45%;
+    margin: 21.5%;
+    /* margin: 0;
+    position: fixed;
+    text-align: center;
+    padding-top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 100%; */
 }
 
 .social {
-    flex: 1 1 0;
-    width: 0;
+    padding: 10px;
 }
 
 .social:hover {
-    filter:opacity(0.45);
+    filter:opacity(0.5);
   }
