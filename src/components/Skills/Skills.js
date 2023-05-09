@@ -10,15 +10,17 @@ const Skills = () => {
     <div className="skill-container">
         <h1>Skills</h1>
 
+        <p className='bar'></p>
+
         <div className='skills'>
             <ListGroup className="skill">
-            <ListGroup.Item>
+            <ListGroup.Item variant="dark">
                 <div className="skill-title">
                     <img src={coding} alt="languagesimg" width="50px" height="50px" />
                     <h6>Languages</h6>
                 </div>
             </ListGroup.Item>
-            <ListGroup.Item>
+            <ListGroup.Item variant="dark">
                 <div className="list">
                     <p>C/C++</p>
                     <p>Java</p>
@@ -36,13 +38,13 @@ const Skills = () => {
 
 
             <ListGroup className="skill">
-            <ListGroup.Item>
+            <ListGroup.Item variant="dark">
                 <div className="skill-title">
                     <img src={tools} alt="toolsimg" width="50px" height="50px" />
                     <h6>Tools/Environments</h6>
                 </div>
             </ListGroup.Item>
-            <ListGroup.Item>
+            <ListGroup.Item variant="dark">
                 <div className="list">
                     <p>Git/GitHub</p>
                     <p>IntelliJ</p>
@@ -54,13 +56,13 @@ const Skills = () => {
 
 
             <ListGroup className="skill">
-            <ListGroup.Item>
+            <ListGroup.Item variant="dark">
                 <div className="skill-title">
                     <img src={testing} alt="testingimg" width="50px" height="50px" />
                     <h6>Testing</h6>
                 </div>
             </ListGroup.Item>
-            <ListGroup.Item>
+            <ListGroup.Item variant="dark">
                 <div className="list">
                     <p>JUnit</p>
                     <p>GDB</p>

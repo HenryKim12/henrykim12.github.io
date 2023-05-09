@@ -107,7 +107,7 @@ const particlesConfig = {
       }
     },
     retina_detect: true,
-    fullScreen: false
+    // fullScreen: false
   }
 
 export default particlesConfig

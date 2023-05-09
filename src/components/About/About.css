@@ -1,17 +1,21 @@
 .aboutme {
-    /* background-color: ; */
+    background-color: rgba(35, 35, 35, 0.957);
     padding: 5%;
-    border: 1px solid white;
-    border-radius: 20px;
-    /* width: 70%; */
-    /* margin-left: 15%; */
-    background-image: url(https://onaircode.com/wp-content/uploads/2017/11/Tesselation-Transition.jpg);
-    background-color: white;
+    display: block;
 }
 
 .title {
     margin: auto;
     text-align: center;
+    color: white;
+    padding-bottom: 10px;
+}
+
+.bar {
+    border: 2px solid dodgerblue;
+    border-radius: 5px;
+    width: 50px;
+    margin: auto;
 }
 
 .about {

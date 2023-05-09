@@ -6,10 +6,15 @@
 .skills {
     display: flex;
     justify-content: space-between;
+    padding: 2%;
 }
 
 .skill {
     width: 30%;
+}
+
+.skill:hover {
+    transform: scale(1.1);
 }
 
 .skill-title {
@@ -23,4 +28,11 @@
     text-align: center;
     padding-top: 1px;
     padding-bottom: 1px;
+}
+
+.bar {
+    border: 2px solid dodgerblue;
+    border-radius: 5px;
+    width: 50px;
+    margin: auto;
 }
