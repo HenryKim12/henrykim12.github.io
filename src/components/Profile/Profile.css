@@ -1,20 +1,24 @@
 .profile {
     text-align: center;
-    margin: 21.5%;
-    /* margin: 0;
-    position: fixed;
-    text-align: center;
-    padding-top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    width: 100%; */
+    margin: 16%;
 }
 
 .social {
     padding: 10px;
+    z-index: 9999;
 }
 
 .social:hover {
     filter:opacity(0.5);
   }
+
+  .name {
+    font-size: 150px;
+    font-weight: bold;
+  }
+
+  .degree {
+    font-size: 40px;
+    font-style: italic;
+  }
+

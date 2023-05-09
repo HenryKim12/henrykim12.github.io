@@ -12,9 +12,9 @@ const Menu = () => {
   // }
 
   return (
-    <Navbar bg="dark" variant="dark">
+    <Navbar className="menu" bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand href="#home">Henry Kim</Navbar.Brand>
+          <Navbar.Brand>HK</Navbar.Brand>
           <Nav className="elements">
             <Nav.Link>About me</Nav.Link>
             <Nav.Link>Skills</Nav.Link>

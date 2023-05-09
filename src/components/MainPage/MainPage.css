@@ -1,3 +1,7 @@
 .main {
     display: block;
 }
+
+.social:hover {
+    filter: grayscale(1) invert(1);
+}

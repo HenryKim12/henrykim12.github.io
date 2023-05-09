@@ -4,13 +4,15 @@ import Profile from "../Profile/Profile"
 import About from "../About/About"
 import Skills from '../Skills/Skills'
 import Projects from '../Projects/Projects'
+import ParticlesBackground from '../ParticlesBackground/ParticlesBackground'
 
 const MainPage = () => {
   return (
     <div className="main">
         <Menu />
+        <ParticlesBackground />
         <Profile />
-        <About />
+        <About className="about-container"/>
         <Skills />
         <Projects />
     </div>
