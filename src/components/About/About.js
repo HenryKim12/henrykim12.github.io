@@ -1,9 +1,17 @@
 import React from 'react'
 import "./About.css"
 
-const About = () => {
+const About = ({aboutRef}) => {
+  const handleScroll = (ref) => {
+    window.scrollTo({
+      top: ref.offsetTop,
+      left: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
-    <div className='aboutme'>
+    <div ref={aboutRef} className='aboutme'>
         <h1 className="title">About Me</h1>
         <p className='bar'></p>
         <div className='about'>

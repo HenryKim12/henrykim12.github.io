@@ -2,6 +2,12 @@
     display: block;
 }
 
-.social:hover {
-    filter: grayscale(1) invert(1);
+.end-block {
+    border: 2px solid rgba(35, 35, 35, 0.957);
+    height: 250px;
+    background: rgba(35, 35, 35, 0.957);
+    margin: 0;
+    padding-top: 3%;
+    text-align: center;
+    color: white;
 }

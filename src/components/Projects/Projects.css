@@ -1,7 +1,6 @@
 .projects-container {
     display: block;
     text-align: center;
-    /* background-color: rgba(35, 35, 35, 0.957); */
 }
 
 .projects {
@@ -32,6 +31,7 @@
     color: dodgerblue;
     width: 150px;
     padding-right: 10px;
+    font-weight: bold;
 }
 
 .vertical {

@@ -23,7 +23,7 @@ const Projects = () => {
     },
     {
       name: "JavaFit", 
-      description: "Built an application that records workouts, set new fitness goals, and tracks macros to aid in health and fitness. Implemeneted a complex graphical user interface using Swing to operate app", 
+      description: "Built an application that records workouts, set new fitness goals, and tracks macros to aid in health and fitness. Implemented a complex graphical user interface using Swing to operate app", 
       skills: ["Java", "Swing", "JUnit"]
     }
   ]
