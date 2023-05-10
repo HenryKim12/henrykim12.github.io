@@ -13,11 +13,13 @@ function App() {
 
   return (
     <div className="App">
-      {start ? 
+      {/* {start ? 
       <div>
         <StartPage prop={start}/>
         <Button variant="secondary" onClick={changeStart}>Who is Henry Kim?</Button>
-      </div> : <MainPage />}
+      </div> : <MainPage />} */}
+
+      <MainPage />
     </div>
   );
 }
