@@ -13,11 +13,11 @@ const Menu = () => {
   }
 
   const handleScrollProjects = () => {
-    window.scrollTo(0, 2000);
+    window.scrollTo(0, 2025);
   }
 
   const handleScrollExperience = () => {
-    window.scrollTo(0, 2500);
+    window.scrollTo(0, 4000);
   }
 
   return (
