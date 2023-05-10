@@ -30,12 +30,13 @@
 
 .p-name {
     color: dodgerblue;
+    width: 150px;
     padding-right: 10px;
 }
 
 .vertical {
     border-left: 1px solid dodgerblue;
-    height: 100px;
+    height: 120px;
 }
 
 .p-description {
