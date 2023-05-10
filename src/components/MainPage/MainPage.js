@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React from 'react'
 import "./MainPage.css"
 import Menu from "../Menu/Menu"
 import Profile from "../Profile/Profile"
@@ -10,18 +10,9 @@ import Experience from '../Experience/Experience'
 import Button from "react-bootstrap/Button"
 
 const MainPage = () => {
-  const aboutRef = useRef(null);
-
-  // const scroll = (ref) => {
-  //   window.scrollTo({
-  //     top: ref.current.offsetTop,
-  //     behavior: "smooth"
-  //   })
-  // }
-
   return (
     <div className="main">
-        <Menu aboutRef={aboutRef} />
+        <Menu />
         <ParticlesBackground />
         <Profile />
         <About className="about-container"/>

@@ -13,8 +13,12 @@
     width: 30%;
 }
 
-.skill:hover {
-    transform: scale(1.1);
+.skill:hover{
+    filter: invert(1);
+    
+    .img {
+        filter: invert(1);
+    }
 }
 
 .skill-title {

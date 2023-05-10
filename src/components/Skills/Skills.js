@@ -16,7 +16,7 @@ const Skills = () => {
             <ListGroup className="skill">
             <ListGroup.Item variant="dark">
                 <div className="skill-title">
-                    <img src={coding} alt="languagesimg" width="50px" height="50px" />
+                    <img className="img" src={coding} alt="languagesimg" width="50px" height="50px" />
                     <h6>Languages</h6>
                 </div>
             </ListGroup.Item>
@@ -40,7 +40,7 @@ const Skills = () => {
             <ListGroup className="skill">
             <ListGroup.Item variant="dark">
                 <div className="skill-title">
-                    <img src={tools} alt="toolsimg" width="50px" height="50px" />
+                    <img className="img" src={tools} alt="toolsimg" width="50px" height="50px" />
                     <h6>Tools/Environments</h6>
                 </div>
             </ListGroup.Item>
@@ -58,7 +58,7 @@ const Skills = () => {
             <ListGroup className="skill">
             <ListGroup.Item variant="dark">
                 <div className="skill-title">
-                    <img src={testing} alt="testingimg" width="50px" height="50px" />
+                    <img className="img" src={testing} alt="testingimg" width="50px" height="50px" />
                     <h6>Testing</h6>
                 </div>
             </ListGroup.Item>

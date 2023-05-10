@@ -1,6 +1,6 @@
 .aboutme {
     background-color: rgba(35, 35, 35, 0.957);
-    padding: 5%;
+    padding: 3%;
     display: block;
 }
 
@@ -19,21 +19,24 @@
 }
 
 .about {
-    width: 100%;
-    /* height: 400px; */
-    display: flex;
     align-items: center;
 }
 
-/* .me {
-    border-radius: 50%;
-    margin-left: 20%;
-    margin-right: 3%;
-} */
 
 .para {
     width: 40%;
     background-color: white;
-    border: 1px solid lightslategray;
+    border: 1px solid;
     border-radius: 10px;
+    margin: auto;
+    margin-top: 1%;
+    padding-top: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
+    text-align: center;
+}
+
+.resumeButton {
+    margin-left: 47%;
+    margin-top: 2%;
 }
