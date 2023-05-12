@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import "./MainPage.css"
 import Menu from "../Menu/Menu"
 import Profile from "../Profile/Profile"
@@ -7,24 +7,34 @@ import Skills from '../Skills/Skills'
 import Projects from '../Projects/Projects'
 import ParticlesBackground from '../ParticlesBackground/ParticlesBackground'
 import Experience from '../Experience/Experience'
-import Button from "react-bootstrap/Button"
+import Next from '../Next/Next'
 
 const MainPage = () => {
+  const aboutRef = useRef();
+  const skillsRef = useRef();
+  const projectsRef = useRef();
+  const experienceRef = useRef();
+  // const topRef = useRef();
+
   return (
     <div className="main">
-        <Menu />
+        <Menu aboutRef={aboutRef} skillsRef={skillsRef} projectsRef={projectsRef} experienceRef={experienceRef} />
         <ParticlesBackground />
         <Profile />
-        <About className="about-container"/>
-        <Skills />
-        <Projects />
-        <Experience />
-        <div className='end-block'>
-          <h1>What's Next?</h1>
-          <p>Feel free to contact me!</p>
-          <Button variant="light" href={"mailto:henryshkim@hotmail.com"} target="_blank" rel="noreferrer">
-            Say Hello
-          </Button>
+        <div ref={aboutRef}>
+          <About aboutRef={aboutRef} className="about-container"/>
+        </div>
+        <div ref={skillsRef}>
+          <Skills />
+        </div>
+        <div ref={projectsRef}>
+          <Projects />
+        </div>
+        <div ref={experienceRef}>
+          <Experience />
+        </div>
+        <div>
+          <Next />
         </div>
     </div>
   )

@@ -3,21 +3,33 @@ import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
 import "./Menu.css"
 
-const Menu = () => {
+const Menu = (props) => {
   const handleScrollAbout = () => {
-    window.scrollTo(0, 860);
+    window.scrollTo({
+      top: props.aboutRef.current.offsetTop,
+      behavior: "smooth"
+    })
   };
 
   const handleScrollSkill = () => {
-    window.scrollTo(0, 1350);
+    window.scrollTo({
+      top: props.skillsRef.current.offsetTop,
+      behavior: "smooth"
+    })
   }
 
   const handleScrollProjects = () => {
-    window.scrollTo(0, 2025);
+    window.scrollTo({
+      top: props.projectsRef.current.offsetTop,
+      behavior: "smooth"
+    })
   }
 
   const handleScrollExperience = () => {
-    window.scrollTo(0, 4000);
+    window.scrollTo({
+      top: props.experienceRef.current.offsetTop,
+      behavior: "smooth"
+    })
   }
 
   return (

@@ -1,0 +1,24 @@
+.end-block {
+    border: 2px solid rgba(35, 35, 35, 0.957);
+    height: 250px;
+    background: rgba(35, 35, 35, 0.957);
+    margin: 0;
+    padding-top: 3%;
+    padding-bottom: 15%;
+    text-align: center;
+    color: white;
+}
+
+.topScrollBtn {
+    border: 1px solid white;
+    font-size: 30px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: white;
+    margin-left: 90%;
+}
+
+.topScrollBtn:hover {
+    transform: translateY(-5px);
+}

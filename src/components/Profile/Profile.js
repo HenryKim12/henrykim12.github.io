@@ -18,7 +18,7 @@ const Profile = () => {
                 <img src={github} alt="github icon" width="30px" height="30px"></img>
             </a>
 
-            <a className="social" href={"https://www.linkedin.com/in/henry-kim-47889b208/"} target="_blank" rel="noreferrer">
+            <a className="social" href={"https://www.linkedin.com/in/henrykim12/"} target="_blank" rel="noreferrer">
                 <img src={linkedin} alt="linkedin icon" width="30px" height="30px"></img>
             </a>
 
