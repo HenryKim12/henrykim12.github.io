@@ -61,3 +61,11 @@
     width: 50px;
     margin: auto;
 }
+
+.sourceimg {
+    filter: invert(1);
+}
+
+.sourceimg:hover {
+    transform: translateY(-3px);
+}
