@@ -13,7 +13,7 @@ const About = () => {
                 <p>Hello! My name is Henry and I am a 3rd year computer science major at the University of British Colombia with a
                     passion for designing and developing applications for the internet. I transferred into computer science so that 
                     I can become more involved in the tech community and leave a digital footprint in this growing industry. I am 
-                    exicted to become a part of a team that strives towards a common goal and accomplishes a mission. I am a quick 
+                    excited to become a part of a team that strives towards a common goal and accomplishes a mission. I am a quick 
                     learner, a team player, and an excellent problem solver. I am confident that I can become a valuable asset 
                     to your web developement team. 
                 </p>
