@@ -1,26 +1,22 @@
 import './App.css';
 import { useState } from "react";
-import MainPage from './components/MainPage/MainPage';
-import StartPage from './components/StartPage/StartPage';
+import MainPage from './components/v1/MainPage/MainPage';
+import StartPage from './components/v1/StartPage/StartPage';
 import Button from "react-bootstrap/Button"
+import { Route, Routes } from "react-router-dom"
 
 function App() {
-  const [start, setStart] = useState(true);
-
-  function changeStart() {
-    setStart(false);
-  }
 
   return (
-    <div className="App">
-      {/* {start ? 
-      <div>
-        <StartPage prop={start}/>
-        <Button variant="secondary" onClick={changeStart}>Who is Henry Kim?</Button>
-      </div> : <MainPage />} */}
-
-      <MainPage />
-    </div>
+    <Routes>
+      <Route path='/v1' element={<MainPage/>} />
+        {/* <div className="App">
+          <MainPage />
+        </div> */}
+      <Route path="/" eleme/>
+      
+    </Routes>
+    
   );
 }
 
