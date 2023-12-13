@@ -13,7 +13,7 @@ function App() {
       <Menu />
       <main className='sections'>
         <div className='left-section'>
-          <p>HELLO</p>
+          <p>HELLO WORLD</p>
         </div>
 
         <div>
