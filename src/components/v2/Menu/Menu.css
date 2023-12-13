@@ -1,0 +1,27 @@
+.menu {
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.fade-in-nav {
+    display: flex;
+    float: right !important;
+}
+
+.navlink-right {
+    color: white !important;
+    float: right !important;
+    margin-right: 10px !important;
+}
+
+.navlink-right:hover {
+    color: rgb(134, 194, 50) !important;
+}
+
+.brand {
+    color: rgb(134, 194, 50) !important;
+    margin-right: 80%;
+    padding-left: 3% !important;
+    font-size: 30px !important;
+    animation: fadeIn 10s !important;
+}
