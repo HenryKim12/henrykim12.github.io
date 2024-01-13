@@ -1,6 +1,8 @@
 .menu {
     justify-content: space-between;
     padding-top: 20px;
+    margin-right: 5%;
+    margin-top: 20px;
 }
 
 .fade-in-nav {

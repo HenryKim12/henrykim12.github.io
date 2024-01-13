@@ -1,0 +1,17 @@
+.left-section {
+    width: 20%;
+    height: 100%;
+    margin-left: 30px;
+}
+
+.socials {
+    list-style-type: none;
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+}
+
+.social {
+    margin-bottom: 10px;
+}
+

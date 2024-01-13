@@ -1,9 +1,5 @@
 import React from 'react'
 import "./Home.css"
-import { socials } from '../../../data/socials/socials'
-import github_img from '../../../data/socials/github.png'
-import linkedin_img from '../../../data/socials/linkedin.png'
-import mail_img from '../../../data/socials/mail.png'
 import FadeIn from "react-fade-in"
 
 function Home() {
@@ -26,21 +22,8 @@ function Home() {
             <div className='fadeup-enter'>
                 <p>Seeking new opportunities for Summer 2024.</p>
             </div>
-            <div className="socials">
-                <a className="social" href={socials["github"]["link"]} target="_blank" rel="noreferrer">
-                    <img src={github_img} alt="github icon" width="30px" height="30px"></img>
-                </a>
-
-                <a className="social" href={socials["linkedin"]["link"]} target="_blank" rel="noreferrer">
-                    <img src={linkedin_img} alt="linkedin icon" width="30px" height="30px"></img>
-                </a>
-
-                <a className="social" href={socials["email"]["link"]} target="_blank" rel="noreferrer">
-                    <img src={mail_img} alt="mail icon" width="30px" height="30px"></img>
-                </a>
-            </div>
+            <button>resume</button>
         </FadeIn>
-        
     </section>
   )
 }
