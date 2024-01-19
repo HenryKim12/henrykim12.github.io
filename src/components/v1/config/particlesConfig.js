@@ -75,7 +75,7 @@ const particlesConfig = {
           mode: "repulse"
         },
         onclick: {
-          enable: true,
+          enable: false,
           mode: "push"
         },
         resize: true
@@ -107,7 +107,10 @@ const particlesConfig = {
       }
     },
     retina_detect: true,
-    // fullScreen: false
+    // fullScreen: {
+    //   enable: true,
+    //   zIndex: 0
+    // }
   }
 
 export default particlesConfig

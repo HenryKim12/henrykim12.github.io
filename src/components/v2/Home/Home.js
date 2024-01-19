@@ -4,27 +4,53 @@ import FadeIn from "react-fade-in"
 
 function Home() {
   return (
-    <section className='home'>
+    
+    <div className='home'>
         <FadeIn delay={125}>
-            <div className='fadeup-enter'>
-                <h5 className='h5-text'>Welcome, my name is</h5>
+            <div className='welcome'>
+                <h5>Welcome, my name is</h5>
             </div>
-            <div className='fadeup-enter'>
-                <h1 className='h1-one'>Henry Kim.</h1>
+            <div className='name'>
+                <p>Henry Kim</p>
             </div>
-            <div className='fadeup-enter'>
-                <h1 className='h1-two'>I implement solutions.</h1>
+            {/* <span class="line">
+                <h2><span>Utilize the Power of Technology</span></h2>
+            </span> */}
+            <div className='title'>
+                <h1>Let me help you utilize the power of technology</h1>
             </div>
-            <div className='fadeup-enter'>
+            <div className='bio'>
                 <p>I am a software developer that thrives to design and implement technology to provide solutions. Currently, I am pursuing a Bachelor's Degree as a Computer
                 Science major at UBC and developing scalable applications at Powerex.</p>
             </div>
-            <div className='fadeup-enter'>
-                <p>Seeking new opportunities for Summer 2024.</p>
+            <div className='seeking'>
+                <p>Seeking intern opportunities for Summer 2024.</p>
             </div>
-            <button>resume</button>
+            <button>resume????????</button>
         </FadeIn>
-    </section>
+    </div>
+    
+    // <section className='home'>
+    //     <FadeIn delay={125}>
+    //         <div>
+    //             <h5 className='h5-text'>Welcome, my name is</h5>
+    //         </div>
+    //         <div>
+    //             <h1 className='h1-one'>Henry Kim.</h1>
+    //         </div>
+    //         <div>
+    //             <h1 className='h1-two'>I implement solutions.</h1>
+    //         </div>
+    //         <div>
+    //             <p>I am a software developer that thrives to design and implement technology to provide solutions. Currently, I am pursuing a Bachelor's Degree as a Computer
+    //             Science major at UBC and developing scalable applications at Powerex.</p>
+    //         </div>
+    //         <div>
+    //             <p>Seeking new opportunities for Summer 2024.</p>
+    //         </div>
+    //         <button>resume</button>
+    //     </FadeIn>
+    // </section>
   )
 }
 

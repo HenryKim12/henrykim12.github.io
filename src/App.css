@@ -1,15 +1,11 @@
-.App {
-  font-family: 'Calibre','Inter','San Francisco','SF Pro Text',-apple-system,system-ui,sans-serif;
-}
-
 * {
-  /* background-color: rgb(41,43,47); */
-  background-color: rgb(34, 38, 41);
-  /* background-color: black; */
+  background-color: #232323;
+  font-family: 'Montserrat',sans-serif;
 }
 
-.content {
+/* .content {
   margin-top: 12%;
+  padding-bottom: 12%;
   display: block;
   position: absolute;
   width: 55%;
@@ -18,21 +14,12 @@
   left: 47%;
   transform: translate(-50%, -50%);
   padding: 10px;
-}
-
-.home {
-  margin-bottom: 35%;
-}
+} */
 
 .sections {
   display: flex;
 }
 
-.left-section {
-  color:white;
-  position: fixed;
-}
-
 .mid-section {
-  width: 80%;
+  display: block;
 }

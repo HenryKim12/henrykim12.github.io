@@ -3,5 +3,19 @@
     color: white;
     margin: auto;
     width: 50%;
-    padding: 10px;
+}
+
+.about-body {
+    
+}
+
+.tech-list {
+    display: flex;
+    list-style-type: "▹ ";
+    flex-flow: wrap column;
+    max-height: 50px;
+}
+
+.tech-list ::marker {
+    color: #0092ff;
 }
