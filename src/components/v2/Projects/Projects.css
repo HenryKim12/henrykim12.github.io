@@ -8,10 +8,88 @@
 
 .a-project {
     display: flex;
+    margin-bottom: 100px;
+}
+
+.a-detail {
+    background-color: white;
+    height: 50%;
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+}
+
+.image {
+    filter: brightness(50%);
+}
+
+.a-image :hover {
+    filter: brightness(100%);
+}
+
+.a-title {
+    color: black;
+    background-color: white;
+    padding-left: 15px;
+}
+
+.a-description {
+    background-color: white;
+    color: #a7a7a7;
+    padding-left: 15px;
+}
+
+.a-source {
+    background-color: white;
+    display: flex;
+    padding-left: 15px;
+}
+
+.a-stack {
+    margin-top: 10px;
+    background-color: white;
+    color: #0092ff;
+    padding: 0;
+}
+
+.a-stack li {
+    background-color: white;
+    display: inline;
+    padding-right: 15px;
+}
+
+.b-project {
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.b-image :hover {
+    filter: brightness(100%);
+}
+
+.b-detail {
+    background-color: white;
+    height: 50%;
+    width: 50%;
+    position: absolute;
+    left: 0;
+    top: 20%;
+}
+
+.b-image {
+    position: relative;
+    left: 30%;
+    z-index: -1;
+}
+
+/* .a-project {
+    display: flex;
     position: relative;
     top: 0;
     left: 0;
     margin-bottom: 100px;
+    width: 60%;
 }
 
 .a-image {
@@ -84,6 +162,7 @@
     top: 0;
     left: 0;
     margin-bottom: 100px;
+    width: 60%;
 }
 
 .b-image {
@@ -109,7 +188,7 @@
     padding: 15px;
     color: black;
     padding-left: 15px;
-}
+} */
 
 
 
