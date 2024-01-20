@@ -1,0 +1,18 @@
+.contact {
+    display: block;
+    color: white;
+    margin: auto;
+    margin-top: 15%;
+    width: 50%;
+    height: 50vh;
+}
+
+.contact-head {
+    text-align: center;
+    font-size: 70px;
+}
+
+.contact-body {
+    text-align: center;
+    display: block;
+}

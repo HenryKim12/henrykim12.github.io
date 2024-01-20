@@ -9,6 +9,7 @@ import About from './components/v2/About/About';
 import LeftLayout from './components/v2/LeftLayout/LeftLayout';
 import Experience from "./components/v2/Experience/Experience";
 import Projects from "./components/v2/Projects/Projects";
+import Contact from './components/v2/Contact/Contact';
 //import ParticlesBackground from './components/v1/ParticlesBackground/ParticlesBackground';
 
 function App() {
@@ -24,8 +25,8 @@ function App() {
           <About />
           <Experience />
           <Projects />
+          <Contact />
         </div>
-
       </main>
     </div>
   );

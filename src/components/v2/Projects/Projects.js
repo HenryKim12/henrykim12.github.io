@@ -1,11 +1,73 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./Projects.css"
 import Fade from "react-reveal"
 import ubcImg from "../../../data/images/ubc.jpg"
 import studySpotImg from '../../../data/images/studyspot.png'
 import Button from 'react-bootstrap/Button';
 
-function Projects() {
+function Projects() {  
+  const otherProjects = [
+    {
+      title: "FoodForThought",
+      description: "asdfasdfg",
+      stack: ["react", "scc"],
+      link: "sadfa"
+    },
+    {
+      title: "asd",
+      description: "asdfasdfg",
+      stack: ["react", "scc"],
+      link: "sadfa"
+    },
+    {
+      title: "df",
+      description: "asdfasdfg",
+      stack: ["react", "scc"],
+      link: "sadfa"
+    }
+  ]
+
+  const moreProjects = [
+    {
+      title: "FoodForThought",
+      description: "asdfasdfg",
+      stack: ["react", "scc"],
+      link: "sadfa"
+    },
+    {
+      title: "FoodForThought",
+      description: "asdfasdfg",
+      stack: ["react", "scc"],
+      link: "sadfa"
+    },
+    {
+      title: "FoodForThought",
+      description: "asdfasdfg",
+      stack: ["react", "scc"],
+      link: "sadfa"
+    },
+    {
+      title: "FoodForThought",
+      description: "asdfasdfg",
+      stack: ["react", "scc"],
+      link: "sadfa"
+    },
+    {
+      title: "FoodForThought",
+      description: "asdfasdfg",
+      stack: ["react", "scc"],
+      link: "sadfa"
+    },
+    {
+      title: "FoodForThought",
+      description: "asdfasdfg",
+      stack: ["react", "scc"],
+      link: "sadfa"
+    },
+  ]
+
+  const [others, setOthers] = useState(otherProjects)
+
   return (
     <Fade>
       <div className='projects'>
@@ -102,7 +164,6 @@ function Projects() {
             </div>
           </div>
         </Fade>
-          
       </div>
     </Fade>
   )
