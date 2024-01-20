@@ -3,19 +3,33 @@
     color: white;
     margin: auto;
     width: 50%;
+    height: 100vh;
 }
 
-.about-body {
-    
+.about-head {
+    text-align: center;
+    font-size: 70px;
 }
 
-.tech-list {
+.tech-list-row {
     display: flex;
-    list-style-type: "▹ ";
     flex-flow: wrap column;
     max-height: 50px;
+    margin-bottom: 60px;
+    margin-top: 50px;
 }
 
-.tech-list ::marker {
-    color: #0092ff;
+.skill {
+    display: block;
+    text-align: center;
+    transition-property: transform;
+    transition-duration: 0.2s;
+}
+
+.skill:hover .icon{
+    transform: scale(1.1);
+}
+
+.icon {
+    margin-bottom: 10px;
 }

@@ -2,11 +2,13 @@
     display: block;
     color: white;
     margin: auto;
-    width: 50%;
+    width: 40%;
+    height: 100vh;
 }
 
 .experience-body {
     display: flex;
+    margin-left: 3%;
 }
 
 .company-names {
@@ -25,6 +27,10 @@
     display: block;
 }
 
+.company-names :hover {
+    filter: brightness(90%);
+}
+
 .company-names :focus {
     color: #0092ff;
     filter: brightness(90%);
@@ -33,6 +39,10 @@
 .company-descriptions {
     display: block;
     margin-left: 10%;
+}
+
+.line {
+    margin-bottom: 10px;
 }
 
 .company-title {
@@ -60,6 +70,7 @@
 .description {
     color: #a7a7a7;
     list-style-type: "▹ ";
+    padding: 0;
 }
 
 .description ::marker {

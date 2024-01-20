@@ -1,14 +1,15 @@
 import React from 'react'
 import "./About.css"
 import Fade from "react-reveal"
+import { Icon } from '@iconify/react';
 
 function About() {
   return (
-    <Fade delay={500}>
+    <Fade>
       <div className='about'>
 
-        <div className='about-header'>
-          <h2>About</h2>
+        <div className='about-head'>
+          <p>Let Me Tell You About Myself</p>
           <hr/>
         </div>
 
@@ -27,16 +28,62 @@ function About() {
             <p>
             I am actively seeking internships to gain hands-on experience in the industry. Feel free to reach out!
             </p>
-            <p>Here are a few technologies that I have been working with lately: </p>
+            <p>Here are technologies that I am familiar with: </p>
           </div>
 
-          <ul className='tech-list'>
-            <li>Python</li>
-            <li>C# (.NET)</li>
-            <li>React</li>
-            <li>Snowflake</li>
-            <li>Microsoft SQL</li>
-          </ul>
+          
+          <div className='tech-list-row'>
+            <div className='skill'>
+              <Icon className='icon' icon="logos:python" width="50px" height="50px" color='white'/>
+              <p>Python</p>
+            </div>
+            <div className='skill'>
+              <Icon className='icon' icon="devicon:csharp" width="50px" height="50px" color='white'/>
+              <p>C# (.NET)</p>
+            </div>
+            <div className='skill'>
+              <Icon className='icon' icon="logos:c-plusplus" width="50px" height="50px" color='white'/>
+              <p>C++</p>
+            </div>
+            <div className='skill'>
+              <Icon className='icon' icon="logos:java" width="50px" height="50px" color='white'/>
+              <p>Java</p>
+            </div>
+            <div className='skill'>
+              <Icon className='icon' icon="logos:javascript" width="50px" height="50px" color='white'/>
+              <p>JavaScript</p>
+            </div>
+            <div className='skill'>
+              <Icon className='icon' icon="devicon:typescript" width="50px" height="50px" color='white'/>
+              <p>TypeScript</p>
+            </div>
+          </div>
+          <div className='tech-list-row'>
+            <div className='skill'>
+              <Icon className='icon' icon="vscode-icons:file-type-html" width="50px" height="50px" color='white'/>
+              <p>HTML</p>
+            </div>
+            <div className='skill'>
+              <Icon className='icon' icon="vscode-icons:file-type-css" width="50px" height="50px" color='white'/>
+              <p>CSS</p>
+            </div>
+            <div className='skill'>
+                <Icon className='icon' icon="logos:react" width="50px" height="50px" color='white'/>
+                <p>React</p>
+              </div>
+              <div className='skill'>
+                <Icon className='icon' icon="devicon:azure" width="50px" height="50px" color='white'/>
+                <p>Azure</p>
+              </div>
+              <div className='skill'>
+                <Icon className='icon' icon="logos:snowflake-icon" width="50px" height="50px" color='white'/>
+                <p>Snowflake</p>
+              </div>
+              <div className='skill'>
+                <Icon className='icon' icon="devicon:microsoftsqlserver" width="50px" height="50px" color='white'/>
+                <p>MSSQL</p>
+              </div>
+          </div>
         </div>
 
       </div>

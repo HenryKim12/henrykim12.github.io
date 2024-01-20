@@ -1,3 +1,116 @@
 .projects {
+    display: block;
     color: white;
+    margin: auto;
+    width: 60%;
+    height: 100vh;
 }
+
+.a-project {
+    display: flex;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-bottom: 100px;
+}
+
+.a-image {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.image {
+    filter: brightness(50%);
+}
+
+.a-image :hover {
+    filter: brightness(100%);
+}
+
+.a-detail {
+    display: block;
+    border: 1px solid white;
+    background: white;
+    border-radius: 3px;
+    position: absolute;
+    top: 80px;
+    left: 500px;
+    height: 300px;
+    padding: 10px;
+    color: black;
+    padding-left: 15px;
+}
+
+.a-title {
+    background-color: white;
+}
+
+.a-description {
+    background-color: white;
+    color: #a7a7a7;
+}
+
+.a-source {
+    background-color: white;
+    display: flex;
+}
+
+.a-stack {
+    margin-top: 10px;
+    background-color: white;
+    color: #0092ff;
+    padding: 0;
+}
+
+.a-stack li {
+    background-color: white;
+    display: inline;
+    padding-right: 15px;
+}
+
+.code-button {
+    background-color: #0092ff;
+}
+
+.code-link {
+    background-color: #0092ff;
+    text-decoration: none;
+}
+
+.b-project {
+    display: flex;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-bottom: 100px;
+}
+
+.b-image {
+    position: relative;
+    top: 0;
+    left: 0px;
+    z-index: -1;
+}
+
+.b-image :hover {
+    filter: brightness(100%);
+}
+
+.b-detail {
+    display: block;
+    border: 1px solid white;
+    background: white;
+    border-radius: 3px;
+    position: relative;
+    top: 100px;
+    left: 60px;
+    height: 300px;
+    padding: 15px;
+    color: black;
+    padding-left: 15px;
+}
+
+
+
+

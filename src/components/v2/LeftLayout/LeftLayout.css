@@ -17,9 +17,10 @@
     transition: transform 200ms;
 }
 
-.social :hover {
+.social :hover .contact-icon {
     transform: scale(1.1);
 }
+
 
 .vertical-line {
     border-left: 1px solid white;
