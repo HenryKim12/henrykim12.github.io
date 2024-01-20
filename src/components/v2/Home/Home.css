@@ -1,0 +1,22 @@
+.home {
+    color: white;
+    display: block;
+}
+
+.h1-one {
+    font-size: 75px;
+}
+
+.h1-two {
+    font-size: 75px;
+    color: rgb(160, 159, 159)
+}
+
+.h5-text {
+    color: rgb(134, 194, 50);
+}
+
+.social {
+    padding-right: 5%;
+}
+

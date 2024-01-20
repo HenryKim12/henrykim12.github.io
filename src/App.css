@@ -1,4 +1,29 @@
 .App {
-  font-family: sans-serif;
-  /* background-color: rgba(0, 6, 24, 0.868); */
+  font-family: 'Calibre','Inter','San Francisco','SF Pro Text',-apple-system,system-ui,sans-serif;
+}
+
+* {
+  /* background-color: rgb(41,43,47); */
+  background-color: rgb(34, 38, 41);
+  /* background-color: black; */
+}
+
+.content {
+  margin: 10%;
+  padding-left: 15%;
+  padding-right: 15%;
+  display: block;
+}
+
+.home {
+  margin-bottom: 35%;
+}
+
+.sections {
+  display: flex;
+}
+
+.left-section {
+  color:white;
+  position: fixed;
 }
