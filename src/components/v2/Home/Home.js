@@ -4,7 +4,6 @@ import FadeIn from "react-fade-in"
 
 function Home() {
   return (
-    
     <div className='home'>
         <FadeIn delay={400}>
             <div className='welcome'>
@@ -26,7 +25,6 @@ function Home() {
             <div className='seeking'>
                 <p>Seeking intern opportunities for Summer 2024.</p>
             </div>
-            <button>resume????????</button>
         </FadeIn>
     </div>
   )

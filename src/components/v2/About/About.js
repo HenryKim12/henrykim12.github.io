@@ -28,7 +28,7 @@ function About() {
             <p>
             I am actively seeking internships to gain hands-on experience in the industry. Feel free to reach out!
             </p>
-            <p>Here are technologies that I am familiar with: </p>
+            <p>Here are technologies that I am familiar most with: </p>
           </div>
 
           

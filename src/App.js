@@ -11,20 +11,25 @@ import Experience from "./components/v2/Experience/Experience";
 import Projects from "./components/v2/Projects/Projects";
 import Contact from './components/v2/Contact/Contact';
 //import ParticlesBackground from './components/v1/ParticlesBackground/ParticlesBackground';
+import { useRef } from 'react'
 
 function App() {
+  const aboutRef = useRef();
+  const experienceRef = useRef();
+  const projectsRef = useRef();
+
   return (
     <div className='App'> 
-      <Menu />
+      <Menu aboutRef={aboutRef} experienceRef={experienceRef} projectsRef={projectsRef} />
       
       <main className='sections'>
         <LeftLayout />
 
         <div className="mid-section"> 
           <HomeV2 /> 
-          <About />
-          <Experience />
-          <Projects />
+          <div ref={aboutRef}><About /></div>
+          <div ref={experienceRef}><Experience /></div>
+          <div ref={projectsRef}><Projects /></div>
           <Contact />
         </div>
       </main>

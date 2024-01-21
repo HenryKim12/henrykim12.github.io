@@ -12,7 +12,7 @@ function Contact() {
             </div>
             <div className='contact-body'>
                 <p>I am currently looking for an internship opportunity for Summer 2024. Feel free to contact me!</p>
-                <a>
+                <a href='mailto:henryshkim@hotmail.com'>
                     <Button>Contact</Button>
                 </a>
             </div>
