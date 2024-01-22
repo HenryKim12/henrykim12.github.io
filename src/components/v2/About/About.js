@@ -22,7 +22,7 @@ function About() {
             </p>
             <p>
             Additionally, working as a full stack software developer at Powerex, 
-            where I have the opportunity to work on a variety of projects that allow me to reinforce my skills with object-oriented design (OOP), relational databases, 
+            I have the opportunity to work on a variety of projects that allow me to reinforce my skills with object-oriented design (OOP), relational databases, 
             and data structures and algorithms using the latest technologies in C# .NET, Python, Azure, and more.
             </p>
             <p>
