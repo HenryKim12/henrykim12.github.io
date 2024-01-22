@@ -1,9 +1,35 @@
-.home {
-    color: white;
+.home {     
     display: block;
+    color: white;
+    margin: auto;
+    margin-top: 10%;
+    width: 50%;
+    height: 100vh;
+    margin-bottom: 10%;
+    /* text-align: center; */
 }
 
-.h1-one {
+.welcome {
+    color: #a7a7a7;
+}
+
+.name {
+    font-size: 100px;
+}
+
+.bio {
+    color: #a7a7a7;
+}
+
+.seeking {
+    color: #a7a7a7;
+}
+
+.line h2{font-size:30px; text-align:center; border-bottom:1px solid white; position:relative; }
+.line h2 span { position: relative; top: 15px; padding: 0 10px;}
+
+
+/* .h1-one {
     font-size: 75px;
 }
 
@@ -18,5 +44,5 @@
 
 .social {
     padding-right: 5%;
-}
+} */
 

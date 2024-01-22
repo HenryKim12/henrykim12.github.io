@@ -1,0 +1,32 @@
+.left-section {
+    width: 10%;
+    height: 100%;
+    padding-left: 1%;
+    display: block;
+    position: fixed;
+}
+
+.socials {
+    list-style-type: none;
+    position: absolute;
+    bottom: 15%;
+}
+
+.social {
+    margin-bottom: 20px;
+    transition: transform 200ms;
+}
+
+.social :hover .contact-icon {
+    transform: scale(1.1);
+}
+
+
+.vertical-line {
+    border-left: 1px solid white;
+    color: white;
+    height: 100px;
+    margin-left: 12px;
+    bottom: 0;
+}
+
