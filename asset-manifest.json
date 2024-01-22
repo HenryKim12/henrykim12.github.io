@@ -1,20 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.e3e3a5cc.css",
-    "main.js": "/static/js/main.d075cdc9.js",
+    "main.css": "/static/css/main.af2f9a73.css",
+    "main.js": "/static/js/main.e399ac16.js",
     "static/js/787.5ca73c40.chunk.js": "/static/js/787.5ca73c40.chunk.js",
-    "static/media/Resume, Henry Kim.pdf": "/static/media/Resume, Henry Kim.9d64b8b0d8b3c9555637.pdf",
-    "static/media/mail.png": "/static/media/mail.d7029c6146169e8c14f2.png",
-    "static/media/source.png": "/static/media/source.31b08565d49409bf3bfe.png",
-    "static/media/tools.png": "/static/media/tools.346d046af3fcafd10b9a.png",
-    "static/media/testing.png": "/static/media/testing.f05381a81ee6e53e5d63.png",
+    "static/media/studyspot.png": "/static/media/studyspot.55ec3e8434f9325709c2.png",
+    "static/media/gym.jpg": "/static/media/gym.370c882fab183ab8ef9f.jpg",
+    "static/media/ubc.jpg": "/static/media/ubc.d32b0b212c583b4cb9f5.jpg",
     "index.html": "/index.html",
-    "main.e3e3a5cc.css.map": "/static/css/main.e3e3a5cc.css.map",
-    "main.d075cdc9.js.map": "/static/js/main.d075cdc9.js.map",
+    "main.af2f9a73.css.map": "/static/css/main.af2f9a73.css.map",
+    "main.e399ac16.js.map": "/static/js/main.e399ac16.js.map",
     "787.5ca73c40.chunk.js.map": "/static/js/787.5ca73c40.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e3e3a5cc.css",
-    "static/js/main.d075cdc9.js"
+    "static/css/main.af2f9a73.css",
+    "static/js/main.e399ac16.js"
   ]
 }
