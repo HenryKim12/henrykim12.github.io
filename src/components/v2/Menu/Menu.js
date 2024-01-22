@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React from 'react'
 import Navbar from "react-bootstrap/Navbar";
 import Nav from 'react-bootstrap/Nav';
 // import Container from 'react-bootstrap/Container';
@@ -15,21 +15,21 @@ const Menu = (props) => {
 
   const handleScrollAbout = () => {
     window.scrollTo({
-      top: props.aboutRef.current.offsetTop,
+      top: props.aboutRef.current.offsetTop - 100,
       behavior: "smooth"
     })
   };
 
   const handleScrollProjects = () => {
     window.scrollTo({
-      top: props.projectsRef.current.offsetTop,
+      top: props.projectsRef.current.offsetTop - 100,
       behavior: "smooth"
     })
   }
 
   const handleScrollExperience = () => {
     window.scrollTo({
-      top: props.experienceRef.current.offsetTop,
+      top: props.experienceRef.current.offsetTop - 100,
       behavior: "smooth"
     })
   }

@@ -30,7 +30,7 @@ function Experience() {
     <Fade>
       <div className='experience'>
         <div className='experience-header'>
-          <h2>Experience</h2>
+          <h1>Experience</h1>
           <hr/>
         </div>
 
