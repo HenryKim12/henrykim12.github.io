@@ -28,7 +28,6 @@ function Projects() {
                 Find classes and rooms that are closer and more convenient for you to take. 
                 Search through every class with specific requirements to find the perfect match for you.
                 The search is as easy as asking. 
-                <div className='a-source'>
                 <ul className='a-stack'>
                   <li>TypeScript</li>
                   <li>React</li>
@@ -43,7 +42,6 @@ function Projects() {
                   </li>
                 </ul>
               </div>
-              </div>
             </div>
           </div>
         </Fade>
@@ -56,7 +54,6 @@ function Projects() {
                   A rating system for buildings and rooms within UBC campus that allows people to rate, monitor, and create reviews for a given study spot on campus. 
                   Share your experiences from studying in UBC by creating a review for the location.
                   Browse through other buildings to find the best study spot based on star rating, reviews, or capacity.
-                  <div className='a-source'>
                     <ul className='a-stack'>
                       <li>React</li>
                       <li>Node</li>
@@ -69,7 +66,6 @@ function Projects() {
                         </a>
                       </li>
                     </ul>
-                  </div>
                 </div>
                 
             </div>
@@ -91,7 +87,6 @@ function Projects() {
                 A fitness application that allows users to record workouts, set new fitness goals, and track macros. 
                 Keep track of workouts and meals to monitor your progression towards achieving your goals.
                 Configure workouts and meals to your desires and keep note of them through the app's logging. 
-                <div className='a-source'>
                   <ul className='a-stack'>
                     <li>Java</li>
                     <li>Swing</li>
@@ -102,11 +97,11 @@ function Projects() {
                       </a>
                     </li>
                   </ul>
-                </div>
               </div>
             </div>
           </div>
         </Fade>
+
       </div>
     </Fade>
   )
