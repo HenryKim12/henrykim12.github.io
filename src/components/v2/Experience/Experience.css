@@ -2,7 +2,7 @@
     display: block;
     color: white;
     margin: auto;
-    width: 40%;
+    width: 50%;
     height: 100vh;
     margin-bottom: 10%;
 }
@@ -76,6 +76,11 @@
 
 .description ::marker {
     color: #0092ff;
+}
+
+.title-link {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /* .container {

@@ -12,6 +12,10 @@
     /* font-size: 50px; */
 }
 
+.about-body {
+    color: #a7a7a7;
+}
+
 .tech-list-row {
     display: flex;
     flex-flow: wrap column;

@@ -17,6 +17,7 @@ function Experience() {
     "Implemented scalable, thread-safe applications by adopting the Producer-Consumer design pattern to allow tasks to run concurrently and improve overall performance"],
     []
   ]
+  const links = ['https://powerex.com/', ""]
 
   const changeCompany = (company) => {
     setIndex(companies.indexOf(company))
@@ -41,10 +42,12 @@ function Experience() {
 
           <div className='company-descriptions'>
             <div className='company-title'>
-              <h5>{titles[index][0]}</h5>
-              <h5 className='title2'>
-                <a href='https://powerex.com/' className='title-link' target="_blank" rel="noreferrer">{titles[index][1]}</a>
-              </h5>
+              <div className='title-link'>
+                <h5>{titles[index][0]}</h5>
+                <h5 className='title2'>
+                  <a href={links[index]} className='title-link' target="_blank" rel="noreferrer">{titles[index][1]}</a>
+                </h5>
+              </div>
             </div>
             
             <p className='timeline'> {timelines[index]}</p>
