@@ -31,16 +31,6 @@ const Goob = () => {
     return (
         <primitive object={scene} ref={modelRef} />
     )
-
-    
-    // return (
-    //     <Canvas>
-    //       <OrbitControls/>
-    //       <ambientLight intensity={1} />
-    //       {/* <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} /> */}
-    //       <primitive object={scene} />
-    //     </Canvas>
-    //   );
 }
 
 export default Goob

@@ -57,11 +57,11 @@ function Home() {
                 </div>
             </div>
             <Canvas>
-      <OrbitControls />
-      <ambientLight intensity={0.5} />
-      <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
-      <Goob />
-    </Canvas>
+                <OrbitControls />
+                <ambientLight intensity={1} />
+                <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
+                <Goob />
+            </Canvas>
         </div>
     )
 }
