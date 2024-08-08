@@ -3,6 +3,7 @@ const routes = {
     about: "/about",
     experience: "/experience",
     projects: "/projects",
+    contact: "/contact",
     error: "/error"
 }
 

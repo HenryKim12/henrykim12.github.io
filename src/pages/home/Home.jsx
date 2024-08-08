@@ -3,8 +3,10 @@ import "./Home.css"
 import { gsap } from 'gsap'
 import { Canvas } from '@react-three/fiber';
 import Blob from '../../components/Blob';
+import { useNavigate } from 'react-router-dom';
 
 function Home() {
+    const navigate = useNavigate();
     const titleRef = useRef(null);
     const gboxRef = useRef(null);
     const pboxRef = useRef(null);
@@ -12,9 +14,10 @@ function Home() {
     const gtextRef = useRef(null);
     const ptextRef = useRef(null);
     const btextRef = useRef(null);
+    const blobRef = useRef(null);
 
     const animate = () => {
-        var t1 = gsap.timeline({delay: 1});
+        var t1 = gsap.timeline();
         t1.fromTo(titleRef.current, {opacity: 0, y: 100}, {opacity: 1, y: 0})
         .to(gboxRef.current, {duration: 1, rotation: 720, translateX: 200, opacity: 1, onStart: () => {
             gsap.to(gtextRef.current, {opacity: 1, duration: 1})
@@ -25,6 +28,7 @@ function Home() {
         .to(bboxRef.current, {duration: 1, rotation: -720, translateX: 200, opacity: 1, onStart: () => {
             gsap.to(btextRef.current, {opacity: 1, duration: 1})
         }})
+        .fromTo(blobRef.current, {opacity: 0, y: 100}, {opacity: 1, y: 0})
     }
 
     useEffect(() => {
@@ -52,8 +56,8 @@ function Home() {
                     </div>
                 </div>
             </div>
-            <div className='blob-container'>
-                <Canvas camera={{ position: [0.0, 0.0, 8.0] }}>
+            <div className='blob-container' onClick={() => navigate("/contact")}>
+                <Canvas className='blob' ref={blobRef} camera={{ position: [0.0, 0.0, 8.0] }}>
                     <Blob />
                 </Canvas>
             </div>
