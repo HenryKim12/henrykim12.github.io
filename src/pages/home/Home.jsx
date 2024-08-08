@@ -1,9 +1,8 @@
 import React, {useEffect, useRef} from 'react'
 import "./Home.css"
 import { gsap } from 'gsap'
-import Goob from '../../components/Goob'
-import { Canvas, useThree } from '@react-three/fiber';
-import { OrbitControls, useGLTF } from '@react-three/drei';
+import { Canvas } from '@react-three/fiber';
+import Blob from '../../components/Blob';
 
 function Home() {
     const titleRef = useRef(null);
@@ -41,24 +40,23 @@ function Home() {
                 <div className='traits'>
                     <div className='trait-container'>
                         <div className='box g' ref={gboxRef} />
-                        <h2 className="text" ref={gtextRef}>SOFTWARE ENGINEER</h2>
+                        <h4 className="text" ref={gtextRef}>SOFTWARE ENGINEER</h4>
                     </div>
                     <div className='trait-container2'>
                         <div className='box p' ref={pboxRef} />
-                        <h2 className="text" ref={ptextRef}>CS STUDENT</h2>
+                        <h4 className="text" ref={ptextRef}>CS STUDENT</h4>
                     </div>
                     <div className='trait-container'>
                         <div className='box b' ref={bboxRef} />
-                        <h2 className="text" ref={btextRef}>TEACHING ASSISTANT</h2>
+                        <h4 className="text" ref={btextRef}>TEACHING ASSISTANT</h4>
                     </div>
                 </div>
             </div>
-            {/* <Canvas>
-                <OrbitControls />
-                <ambientLight intensity={1} />
-                <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
-                <Goob />
-            </Canvas> */}
+            <div className='blob-container'>
+                <Canvas camera={{ position: [0.0, 0.0, 8.0] }}>
+                    <Blob />
+                </Canvas>
+            </div>
         </div>
     )
 }
