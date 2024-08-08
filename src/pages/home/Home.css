@@ -1,0 +1,63 @@
+.home-container {
+    display: block;
+    text-align: center;
+}
+
+.title-container {
+    height: 150px;
+    margin: 50px;
+}
+
+.title {
+    font-size: 150px;
+    color: white;
+    -webkit-text-stroke: 1px black;
+}
+
+.bio-container {
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+}
+
+.trait-container {
+    position: relative;
+    width: 300px; 
+    height: 50px;
+    margin-right: 20px;
+    left: 23%;
+}
+
+.trait-container2 {
+    position: relative;
+    width: 200px; 
+    height: 50px;
+    margin-right: 20px;
+    left: 23%;
+}
+
+.box {
+    width: 50px;
+    height: 50px;
+    border-radius: 10%;
+    position: absolute;
+    border: 1px solid #000;
+}
+
+.text {
+    position: absolute;
+    opacity: 0;
+    color: white;
+    background-color: transparent;
+    -webkit-text-stroke: 1px black;
+}
+
+.g {
+    background: linear-gradient(rgb(24, 255, 24), rgb(208, 248, 213));
+}
+.p {
+    background: linear-gradient(rgb(113, 22, 249), rgb(211, 173, 251));
+}
+.b {
+    background: linear-gradient(rgb(24, 209, 255), rgb(170, 226, 250));
+}
