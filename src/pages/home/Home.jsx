@@ -56,8 +56,8 @@ function Home() {
                     </div>
                 </div>
             </div>
-            <div className='blob-container' onClick={() => navigate("/contact")}>
-                <Canvas className='blob' ref={blobRef} camera={{ position: [0.0, 0.0, 8.0] }}>
+            <div className='blob-container' onClick={() => navigate("/experience")}>
+                <Canvas ref={blobRef} camera={{ position: [0.0, 0.0, 8.0] }}>
                     <Blob />
                 </Canvas>
             </div>
