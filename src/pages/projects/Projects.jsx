@@ -5,6 +5,7 @@ import gsap from 'gsap'
 import Blob from '../../components/Blob'
 import { Canvas } from '@react-three/fiber';
 import { useNavigate } from 'react-router-dom'
+import CardList from '../../components/cardList/CardList'
 
 function Projects() {
   const navigate = useNavigate()
@@ -18,7 +19,7 @@ function Projects() {
     t1.to(boxRef.current, {duration: 1, x: 160, ease: "elastic.out", opacity: 1, onStart: () => {
       gsap.to(textRef.current, {opacity: 1, duration: 1})
     }})
-    // .fromTo(accordRef.current, {opacity: 0, y: 100}, {opacity: 1, y: 0})
+    .fromTo(projectsRef.current, {opacity: 0, y: 100}, {opacity: 1, y: 0})
     .fromTo(blobRef.current, {opacity: 0, y: 100}, {opacity: 1, y: 0})
   }
 
@@ -32,7 +33,10 @@ function Projects() {
         <GsapElement boxRef={boxRef} textRef={textRef} text="PROJECTS" boxColor="orange-box-color"/>
       </div>
 
-
+      <div ref={projectsRef}>
+        <CardList />
+      </div>
+      
 
       <Canvas ref={blobRef} camera={{ position: [0.0, 0.0, 8.0] }} onClick={() => navigate("/contact")}>
           <Blob />

@@ -1,0 +1,12 @@
+.cardItem-container {
+    margin-bottom: 20px;
+}
+
+.project-technologies {
+    display: flex;
+    flex-direction: row;
+}
+
+.project-technology {
+    margin: 10px;
+}
