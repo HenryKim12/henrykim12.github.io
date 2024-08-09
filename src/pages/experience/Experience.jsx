@@ -1,11 +1,11 @@
 import React, { useEffect, useRef, useState } from 'react'
 import "./Experience.css"
 import Accord from '../../components/accord/Accord'
-import experiences from '../../data/experiences'
 import gsap from 'gsap'
 import { Canvas } from '@react-three/fiber';
 import Blob from '../../components/Blob'
 import { useNavigate } from 'react-router-dom'
+import GsapElement from "../../components/gsapElement/GsapElement"
 
 function Experience() {
   const navigate = useNavigate();
@@ -16,7 +16,7 @@ function Experience() {
 
   const animate = () => {
     var t1 = gsap.timeline({delay: 0.5})
-    t1.to(boxRef.current, {duration: 1, x: 200, ease: "elastic.out", opacity: 1, onStart: () => {
+    t1.to(boxRef.current, {duration: 1, x: 190, ease: "elastic.out", opacity: 1, onStart: () => {
       gsap.to(titleRef.current, {opacity: 1, duration: 1})
     }})
     .fromTo(accordRef.current, {opacity: 0, y: 100}, {opacity: 1, y: 0})
@@ -30,8 +30,7 @@ function Experience() {
   return (
     <div className='experience-container'>
       <div className='experience-title-container'>
-        <div className='exp-box box-color' ref={boxRef} />
-        <h1 className='experience-title' ref={titleRef}>EXPERIENCE</h1>
+        <GsapElement boxRef={boxRef} textRef={titleRef} text="EXPERIENCE" boxColor="purple-box-color" />
       </div>
       <div className="accord" ref={accordRef}>
         <Accord />

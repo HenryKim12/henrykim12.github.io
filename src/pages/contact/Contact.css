@@ -1,0 +1,14 @@
+.red-box-color {
+    background: linear-gradient(#ff1919de, rgb(254, 133, 133));
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-title {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
