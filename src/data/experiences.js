@@ -12,7 +12,7 @@ const experiences = [
         employmentDate: "Sept 2023 - April 2024",
         location: "Vancouver, BC",
         companyLink: "https://powerex.com",
-        description: "Developed scalable backend data processing pipelines, architected internal full stack projects for data manipulation, and implemented robust web scrapers for data collection and uptake",
+        description: "Developed scalable backend data processing pipelines, architected internal full stack projects for data manipulation, and implemented robust web scrapers for data collection/ingestion",
         technologies: ["C# (.NET)", "Python", "React", "Azure", "MSSQL", "Snowflake"]
     }
 ]
