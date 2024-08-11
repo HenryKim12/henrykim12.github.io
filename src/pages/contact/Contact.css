@@ -28,6 +28,10 @@
     justify-content: center;
 }
 
+.contact-content-right {
+    width: 350px;
+}
+
 .contact-list {
     list-style: none;
     display: flex;
