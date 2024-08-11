@@ -5,7 +5,7 @@ import gsap from 'gsap'
 import Blob from '../../components/Blob'
 import { Canvas } from '@react-three/fiber';
 import { useNavigate } from 'react-router-dom'
-import CardList from '../../components/cardList/CardList'
+import Carousel from '../../components/carousel/Carousel'
 
 function Projects() {
   const navigate = useNavigate()
@@ -34,7 +34,7 @@ function Projects() {
       </div>
 
       <div ref={projectsRef}>
-        <CardList />
+        <Carousel />
       </div>
       
 
