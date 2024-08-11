@@ -1,0 +1,41 @@
+.accordion-container {
+    width: 50%;
+}
+
+.summary {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.typography-container {
+    display: block;
+    margin: 10px;
+    background-color: #241d41;
+    color: white;
+}
+
+.other-details-outer {
+    display: flex;
+    flex-direction: row;
+}
+
+.other-details-inner {
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+}
+
+.tech-list {
+    display: flex;
+    flex-direction: row;
+}
+
+.tech-item {
+    margin-right: 10px;
+    border: 1px solid rgb(44, 53, 153);
+    padding: 5px;
+    border-radius: 20px;
+    background-color: rgb(44, 53, 153);
+    font-weight: normal;
+}

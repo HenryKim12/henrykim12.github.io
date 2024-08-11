@@ -1,0 +1,14 @@
+.orange-box-color {
+    background: linear-gradient(#1530ffde, rgb(133, 173, 254));
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects-title {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
