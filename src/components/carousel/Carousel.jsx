@@ -25,7 +25,7 @@ function Carousel() {
 
   return (
     <div className="carousel-container">
-      <Box sx={{ maxWidth: 700, width: '100%', color: "white" }}>
+      <Box sx={{ maxWidth: 700, width: '100%', color: "white", height: "400px" }}>
         <div className="project-title">
             <h4>{projects[activeStep]["title"]}</h4>
             <div>{projects[activeStep]["subtitle"]}</div>
@@ -46,7 +46,7 @@ function Carousel() {
         variant="progress"
         sx={{ backgroundColor: 'black' }}
         steps={maxSteps}
-        position="dynamic"
+        position="static"
         activeStep={activeStep}
         backgrounColor="black"
         nextButton={

@@ -4,7 +4,7 @@ import { gsap } from 'gsap'
 import { Canvas } from '@react-three/fiber';
 import Blob from '../../components/Blob';
 import { useNavigate } from 'react-router-dom';
-import { FaRegMessage } from "react-icons/fa6";
+import { TbHandClick } from "react-icons/tb";
 
 function Home() {
     const navigate = useNavigate();
@@ -23,13 +23,13 @@ function Home() {
         var t1 = gsap.timeline();
         t1
         .fromTo(titleRef.current, {opacity: 0, y: 100}, {opacity: 1, y: 0})
-        .to(gboxRef.current, {duration: 1, rotation: 720, translateX: 200, opacity: 1, onStart: () => {
+        .to(gboxRef.current, {duration: 0.75, rotation: 720, translateX: 200, opacity: 1, onStart: () => {
             gsap.to(gtextRef.current, {opacity: 1, duration: 1})
         }})
-        .to(pboxRef.current, {duration: 1, x: 100, ease: "elastic.out", opacity: 1, onStart: () => {
+        .to(pboxRef.current, {duration: 0.75, x: 100, ease: "elastic.out", opacity: 1, onStart: () => {
             gsap.to(ptextRef.current, {opacity: 1, duration: 1})
         }})
-        .to(bboxRef.current, {duration: 1, rotation: -720, translateX: 200, opacity: 1, onStart: () => {
+        .to(bboxRef.current, {duration: 0.75, rotation: -720, translateX: 200, opacity: 1, onStart: () => {
             gsap.to(btextRef.current, {opacity: 1, duration: 1})}
         })
         .fromTo(blobContainerRef.current, {opacity: 0, y: 100}, {opacity: 1, y: 0})
@@ -62,12 +62,12 @@ function Home() {
             </div>
             <div className='blob-container' ref={blobContainerRef} onClick={() => navigate("/experience")}>
                 <div className="blob">
-                    <Canvas ref={blobRef} camera={{ position: [0.0, 0.0, 8.0] }} style={{width: "400px", height: "400px"}} >
+                    <Canvas ref={blobRef} camera={{ position: [0.0, 0.0, 8.0] }} style={{width: "450px", height: "450px"}} >
                         <Blob />
                     </Canvas>
                 </div>
                 <div className='blob-msg' ref={msgRef}>
-                    click me
+                    <TbHandClick size={20} />
                 </div>
             </div>            
         </div>
