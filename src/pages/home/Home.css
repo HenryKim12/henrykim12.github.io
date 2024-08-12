@@ -4,7 +4,22 @@
 }
 
 .blob-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 500px;
+    opacity: 0;
+}
+
+.blob-msg {
+    opacity: 0;
+    color: white;
+    transition: 1s;
+}
+
+.blob:hover + .blob-msg {
+    opacity: 1;
 }
 
 .title-container {

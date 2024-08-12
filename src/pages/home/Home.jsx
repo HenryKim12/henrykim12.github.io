@@ -1,9 +1,10 @@
-import React, {useEffect, useRef} from 'react'
+import React, {useEffect, useRef, useState} from 'react'
 import "./Home.css"
 import { gsap } from 'gsap'
 import { Canvas } from '@react-three/fiber';
 import Blob from '../../components/Blob';
 import { useNavigate } from 'react-router-dom';
+import { FaRegMessage } from "react-icons/fa6";
 
 function Home() {
     const navigate = useNavigate();
@@ -14,11 +15,14 @@ function Home() {
     const gtextRef = useRef(null);
     const ptextRef = useRef(null);
     const btextRef = useRef(null);
+    const blobContainerRef = useRef(null);
     const blobRef = useRef(null);
+    const msgRef = useRef(null);
 
     const animate = () => {
         var t1 = gsap.timeline();
-        t1.fromTo(titleRef.current, {opacity: 0, y: 100}, {opacity: 1, y: 0})
+        t1
+        .fromTo(titleRef.current, {opacity: 0, y: 100}, {opacity: 1, y: 0})
         .to(gboxRef.current, {duration: 1, rotation: 720, translateX: 200, opacity: 1, onStart: () => {
             gsap.to(gtextRef.current, {opacity: 1, duration: 1})
         }})
@@ -26,9 +30,9 @@ function Home() {
             gsap.to(ptextRef.current, {opacity: 1, duration: 1})
         }})
         .to(bboxRef.current, {duration: 1, rotation: -720, translateX: 200, opacity: 1, onStart: () => {
-            gsap.to(btextRef.current, {opacity: 1, duration: 1})
-        }})
-        .fromTo(blobRef.current, {opacity: 0, y: 100}, {opacity: 1, y: 0})
+            gsap.to(btextRef.current, {opacity: 1, duration: 1})}
+        })
+        .fromTo(blobContainerRef.current, {opacity: 0, y: 100}, {opacity: 1, y: 0})
     }
 
     useEffect(() => {
@@ -56,11 +60,16 @@ function Home() {
                     </div>
                 </div>
             </div>
-            <div className='blob-container' onClick={() => navigate("/experience")}>
-                <Canvas ref={blobRef} camera={{ position: [0.0, 0.0, 8.0] }}>
-                    <Blob />
-                </Canvas>
-            </div>
+            <div className='blob-container' ref={blobContainerRef} onClick={() => navigate("/experience")}>
+                <div className="blob">
+                    <Canvas ref={blobRef} camera={{ position: [0.0, 0.0, 8.0] }} style={{width: "400px", height: "400px"}} >
+                        <Blob />
+                    </Canvas>
+                </div>
+                <div className='blob-msg' ref={msgRef}>
+                    click me
+                </div>
+            </div>            
         </div>
     )
 }
