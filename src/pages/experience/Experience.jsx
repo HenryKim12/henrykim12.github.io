@@ -35,7 +35,7 @@ function Experience() {
       <div className="accord" ref={accordRef}>
         <Accord />
       </div>
-      <Canvas ref={blobRef} camera={{ position: [0.0, 0.0, 8.0] }} onClick={() => navigate("/projects")}>
+      <Canvas ref={blobRef} camera={{ position: [0.0, 0.0, 8.0] }} onClick={() => navigate("/projects")} style={{width: "150px"}}>
           <Blob />
       </Canvas>
     </div>

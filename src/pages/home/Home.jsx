@@ -60,9 +60,9 @@ function Home() {
                     </div>
                 </div>
             </div>
-            <div className='blob-container' ref={blobContainerRef} onClick={() => navigate("/experience")}>
+            <div className='blob-container' ref={blobContainerRef}>
                 <div className="blob">
-                    <Canvas ref={blobRef} camera={{ position: [0.0, 0.0, 8.0] }} style={{width: "450px", height: "450px"}} >
+                    <Canvas ref={blobRef} camera={{ position: [0.0, 0.0, 8.0] }} style={{width: "450px", height: "450px"}} onClick={() => navigate("/experience")} >
                         <Blob />
                     </Canvas>
                 </div>

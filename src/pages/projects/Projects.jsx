@@ -38,7 +38,7 @@ function Projects() {
       </div>
       
 
-      <Canvas ref={blobRef} camera={{ position: [0.0, 0.0, 8.0] }} onClick={() => navigate("/contact")}>
+      <Canvas ref={blobRef} camera={{ position: [0.0, 0.0, 8.0] }} onClick={() => navigate("/contact")} style={{width: "150px"}}>
           <Blob />
       </Canvas>
     </div>
