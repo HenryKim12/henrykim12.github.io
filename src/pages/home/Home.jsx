@@ -23,15 +23,21 @@ function Home() {
         var t1 = gsap.timeline();
         t1
         .fromTo(titleRef.current, {opacity: 0, y: 100}, {opacity: 1, y: 0})
-        .to(gboxRef.current, {duration: 0.75, rotation: 720, translateX: 200, opacity: 1, onStart: () => {
+        // .to(gboxRef.current, {duration: 0.75, rotation: 720, translateX: 200, opacity: 1, onStart: () => {
+        //     gsap.to(gtextRef.current, {opacity: 1, duration: 1})
+        // }})
+        .to(gboxRef.current, {duration: 0.75, translateX: 200, ease: "elastic.out", opacity: 1, onStart: () => {
             gsap.to(gtextRef.current, {opacity: 1, duration: 1})
         }})
         .to(pboxRef.current, {duration: 0.75, x: 100, ease: "elastic.out", opacity: 1, onStart: () => {
             gsap.to(ptextRef.current, {opacity: 1, duration: 1})
         }})
-        .to(bboxRef.current, {duration: 0.75, rotation: -720, translateX: 200, opacity: 1, onStart: () => {
-            gsap.to(btextRef.current, {opacity: 1, duration: 1})}
-        })
+        .to(bboxRef.current, {duration: 0.75, translateX: 200, ease: "elastic.out", opacity: 1, onStart: () => {
+            gsap.to(btextRef.current, {opacity: 1, duration: 1})
+        }})
+        // .to(bboxRef.current, {duration: 0.75, rotation: -720, translateX: 200, opacity: 1, onStart: () => {
+        //     gsap.to(btextRef.current, {opacity: 1, duration: 1})}
+        // })
         .fromTo(blobContainerRef.current, {opacity: 0, y: 100}, {opacity: 1, y: 0})
     }
 
