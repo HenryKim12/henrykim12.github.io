@@ -32,7 +32,7 @@ const experiences = [
         technologies: ["C++"]
     },
     {
-        role: "Full Stack Software Developer @ Powerex",
+        role: "Full Stack Software Developer Intern @ Powerex",
         employmentDate: "Sept 2023 - April 2024",
         location: "Vancouver, BC",
         companyLink: "https://powerex.com",
