@@ -3,6 +3,22 @@
   /* background-image: linear-gradient(rgb(0, 0, 0), rgb(97, 97, 97)); */
 }
 
+html {
+  background: rgb(0, 0, 0);
+  overscroll-behavior: none;
+  overflow: hidden;
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: rgb(0, 0, 0);
+  overscroll-behavior: none;
+  overflow: hidden;
+  height: 100vh;
+}
+
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
