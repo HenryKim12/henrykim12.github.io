@@ -4,8 +4,8 @@ const experiences = [
         employmentDate: "Sept 2025 - Dec 2025",
         location: "Surrey, BC",
         companyLink: "https://www.safe.com/",
-        description: "FME Platform Engine",
-        technologies: ["C++"]
+        description: "Transformers",
+        technologies: ["C++", "Python"]
     },
     {
         role: "Software Developer Intern @ Geotab",
@@ -13,7 +13,7 @@ const experiences = [
         location: "Burnaby, BC",
         companyLink: "https://www.geotab.com/",
         description: "Optimization",
-        technologies: ["Go", "C#", "TypeScript"]
+        technologies: ["TypeScript", "Go", "C#"]
     },
     {
         role: "Software Engineer Intern @ Arista Networks",
