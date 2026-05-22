@@ -1,11 +1,85 @@
-.link-container {
-    padding-right: 100px
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px var(--gutter);
+  background: transparent;
+  pointer-events: none;
 }
 
-.brand {
-    padding-left: 20px;
+.navbar-brand,
+.navbar-link {
+  pointer-events: all;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
 }
 
-.nav-link {
-    margin-right: 20px;
+.navbar-brand {
+  font-family: var(--font-display);
+  font-size: 20px;
+  color: var(--accent);
+  letter-spacing: 0.04em;
+  transition: color 0.2s ease;
+  flex-shrink: 0;
+}
+
+.navbar-brand:hover {
+  color: var(--text);
+}
+
+.navbar-links {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.navbar-link {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--text-muted);
+  letter-spacing: 0.12em;
+  transition: color 0.2s ease;
+}
+
+.navbar-link:hover,
+.navbar-link.active {
+  color: var(--text);
+}
+
+/* By default, only the full label is visible */
+.link-short { display: none; }
+.link-label { display: inline; }
+
+/* ─── Tablet ─── */
+@media (max-width: 1024px) {
+  .navbar-links {
+    gap: 24px;
+  }
+}
+
+/* ─── Large mobile ─── */
+@media (max-width: 640px) {
+  .navbar {
+    padding: 18px var(--gutter);
+  }
+  .navbar-links {
+    gap: 18px;
+  }
+}
+
+/* ─── Mobile: swap to short labels (2-digit numbers) ─── */
+@media (max-width: 460px) {
+  .link-label { display: none; }
+  .link-short { display: inline; }
+  .navbar-links {
+    gap: 14px;
+  }
 }

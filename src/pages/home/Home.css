@@ -1,88 +1,246 @@
 .home-container {
-    display: block;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  /* iOS Safari full-height fix */
+  height: -webkit-fill-available;
+  background: var(--bg);
+  overflow: hidden;
 }
 
-.blob-container {
+/* ─── Two-column hero grid ─── */
+.hero-layout {
+  flex: 1;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: 54% 46%;
+  align-items: center;
+  padding: var(--nav-height) var(--gutter) 0;
+  overflow: hidden;
+}
+
+/* ─── Left column ─── */
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  padding-right: 24px;
+}
+
+.hero-name {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Clips y-translate so letters emerge from behind a mask */
+.hero-word-wrap {
+  overflow: hidden;
+  line-height: 0.92;
+  padding-bottom: 0.06em;
+}
+
+.hero-henry,
+.hero-kim {
+  font-family: var(--font-display);
+  font-size: var(--text-hero);
+  line-height: 0.92;
+  letter-spacing: -0.01em;
+  display: block;
+}
+
+.hero-henry { color: var(--text); }
+.hero-kim   { color: var(--accent); }
+
+/* Each letter is independently animated by GSAP */
+.hero-char { display: inline-block; }
+
+.hero-divider {
+  width: 48px;
+  height: 2px;
+  background: var(--border);
+  flex-shrink: 0;
+}
+
+.hero-sub {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--text-muted);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+
+/* ─── Explore CTA ─── */
+.hero-scroll {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  color: var(--text-muted);
+  transition: color 0.25s ease;
+  width: fit-content;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.hero-scroll:hover {
+  color: var(--accent);
+}
+
+.scroll-label {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.scroll-arrow {
+  font-size: 14px;
+  animation: bounce-down 2s ease-in-out infinite;
+}
+
+@keyframes bounce-down {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(5px); }
+}
+
+/* ─── Right column ─── */
+.hero-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blob-wrap {
+  position: relative;
+  width: 520px;
+  height: 520px;
+  flex-shrink: 0;
+}
+
+/* Chartreuse ambient glow */
+.blob-glow {
+  position: absolute;
+  inset: 8%;
+  background: radial-gradient(ellipse at center, rgba(200, 255, 0, 0.07) 0%, transparent 68%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.blob-wrap canvas {
+  position: relative;
+  z-index: 1;
+  display: block;
+}
+
+
+/* ════════════════════════════════════════
+   RESPONSIVE BREAKPOINTS
+   ════════════════════════════════════════ */
+
+/* ─── Small desktop (≤ 1200px) ─── */
+@media (max-width: 1200px) {
+  .blob-wrap {
+    width: 440px;
+    height: 440px;
+  }
+}
+
+/* ─── Tablet landscape (≤ 1024px) ─── */
+@media (max-width: 1024px) {
+  .hero-layout {
+    grid-template-columns: 1fr 1fr;
+  }
+  .hero-left {
+    gap: 22px;
+  }
+  .blob-wrap {
+    width: 360px;
+    height: 360px;
+  }
+}
+
+/* ════════════════════════════════════════
+   MOBILE (≤ 768px)
+   Blob becomes an absolute background element.
+   Name gets full width and scales up.
+   ════════════════════════════════════════ */
+@media (max-width: 768px) {
+  .hero-layout {
+    grid-template-columns: 1fr;
+    position: relative;
+    align-items: center;
+    padding-top: calc(var(--nav-height) + 20px);
+  }
+
+  /* Name has full width — use the space for larger type */
+  .hero-henry,
+  .hero-kim {
+    font-size: clamp(84px, 23vw, 140px);
+  }
+
+  .hero-left {
+    position: relative;
+    z-index: 1;
+    padding-right: 0;
+    gap: 20px;
+  }
+
+  /* Blob: float behind the text, shifted right so it peeks out */
+  .hero-right {
+    position: absolute;
+    inset: 0;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 500px;
-    opacity: 0;
+    padding-left: 30%;
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  .blob-wrap {
+    width: 340px;
+    height: 340px;
+    cursor: default;
+    pointer-events: none;
+    /* opacity is driven by GSAP to 0.18 on mobile */
+  }
 }
 
-.blob-msg {
-    opacity: 0;
-    color: white;
-    transition: 1s;
+/* ─── Large mobile (≤ 600px) ─── */
+@media (max-width: 600px) {
+  .hero-left {
+    gap: 16px;
+  }
+  .hero-sub {
+    letter-spacing: 0.06em;
+  }
+  .blob-wrap {
+    width: 290px;
+    height: 290px;
+  }
 }
 
-.blob:hover + .blob-msg {
-    opacity: 1;
+/* ─── Mobile (≤ 480px) ─── */
+@media (max-width: 480px) {
+  .hero-layout {
+    padding-top: calc(var(--nav-height) + 12px);
+  }
+  .hero-left {
+    gap: 14px;
+  }
+  .blob-wrap {
+    width: 250px;
+    height: 250px;
+  }
 }
 
-.title-container {
-    height: 150px;
-    margin: 30px;
-}
-
-.title {
-    font-size: 150px;
-    color: white;
-    -webkit-text-stroke: 1px black;
-}
-
-.bio-container {
-    display: flex;
-    flex-direction: row;
-    height: 60px;
-    justify-content: center;
-    margin-left: 100px;
-}
-
-.traits { 
-    display: flex;
-    flex-direction: row;
-}
-
-.trait-container {
-    position: relative;
-    width: 350px; 
-    height: 50px;
-}
-
-.trait-container2 {
-    position: relative;
-    width: 200px; 
-    height: 50px;
-    margin-right: 30px;
-}
-
-.box {
-    width: 50px;
-    height: 50px;
-    border-radius: 10%;
-    position: absolute;
-    border: 1px solid #000;
-    opacity: 0;
-}
-
-.text {
-    position: absolute;
-    opacity: 0;
-    color: white;
-    padding-top: 10px;
-    background-color: transparent;
-    -webkit-text-stroke: 1px black;
-}
-
-.g {
-    background: linear-gradient(rgb(24, 255, 24), rgb(208, 248, 213));
-}
-.p {
-    background: linear-gradient(rgb(113, 22, 249), rgb(211, 173, 251));
-}
-.b {
-    background: linear-gradient(rgb(24, 209, 255), rgb(170, 226, 250));
+/* ─── Small mobile (≤ 380px) ─── */
+@media (max-width: 380px) {
+  .blob-wrap {
+    width: 210px;
+    height: 210px;
+  }
 }

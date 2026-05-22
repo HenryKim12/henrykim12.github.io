@@ -1,16 +1,16 @@
 import React from 'react'
 import routes from './router/routes'
-import { BrowserRouter, Routes, Route} from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/home/Home'
 import NavBar from './components/navbar/NavBar'
 import Experience from './pages/experience/Experience'
 import Projects from './pages/projects/Projects'
 import Contact from './pages/contact/Contact'
-import "./App.css"
+import './App.css'
 
 function App() {
   return (
-    <div className='app-container'>
+    <div className="app-container">
       <BrowserRouter>
         <NavBar />
         <Routes>
@@ -21,7 +21,6 @@ function App() {
         </Routes>
       </BrowserRouter>
     </div>
-    
   )
 }
 

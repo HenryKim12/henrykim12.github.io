@@ -1,0 +1,35 @@
+:root {
+  /* Background & surface */
+  --bg:           #050505;
+  --surface:      #0F0F0F;
+  --surface-2:    #161616;
+  --border:       #1C1C1C;
+
+  /* Accent system */
+  --accent:       #C8FF00;
+  --accent-warm:  #FF5C35;
+  --accent-dim:   #7A9900;
+
+  /* Text */
+  --text:         #EBEBEB;
+  --text-muted:   #4A4A4A;
+  --text-mid:     #888888;
+
+  /* Typography */
+  --font-display: 'Anton', sans-serif;
+  --font-mono:    'JetBrains Mono', monospace;
+  --font-body:    'DM Serif Text', serif;
+
+  /* Type scale */
+  --text-hero:  clamp(72px, 18vw, 180px);
+  --text-xl:    clamp(40px, 6vw, 80px);
+  --text-lg:    clamp(24px, 3.5vw, 48px);
+  --text-base:  16px;
+  --text-sm:    14px;
+  --text-xs:    11px;
+
+  /* Spacing */
+  --section-pad: clamp(60px, 10vw, 140px);
+  --gutter:      clamp(20px, 5vw, 80px);
+  --nav-height:  68px;
+}

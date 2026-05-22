@@ -1,0 +1,18 @@
+.tech-tag {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  color: var(--text-muted);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border: 1px solid var(--border);
+  padding: 3px 8px;
+  border-radius: 2px;
+  white-space: nowrap;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.exp-row:hover .tech-tag,
+.exp-row.open .tech-tag {
+  border-color: var(--border);
+  color: var(--text-mid);
+}

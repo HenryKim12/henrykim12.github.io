@@ -1,44 +1,67 @@
 const experiences = [
-    {
-        role: "Software Developer Intern @ Safe Software",
-        employmentDate: "Sept 2025 - Dec 2025",
-        location: "Surrey, BC",
-        companyLink: "https://www.safe.com/",
-        description: "Transformers",
-        technologies: ["C++", "Python"]
-    },
-    {
-        role: "Software Developer Intern @ Geotab",
-        employmentDate: "May 2025 - Aug 2025",
-        location: "Burnaby, BC",
-        companyLink: "https://www.geotab.com/",
-        description: "Optimization",
-        technologies: ["TypeScript", "Go", "C#"]
-    },
-    {
-        role: "Software Engineer Intern @ Arista Networks",
-        employmentDate: "Jan 2025 - Apr 2025",
-        location: "Vancouver, BC",
-        companyLink: "https://www.arista.com/en/",
-        description: "EOS - Extensible Operating System",
-        technologies: ["C++", "Python", "Linux"]
-    },
-    {
-        role: "Undergraduate Teaching Assistant @ UBC",
-        employmentDate: "Sept 2024 - Dec 2024",
-        location: "Vancouver, BC",
-        companyLink: "https://ubc.ca",
-        description: "Facilitated weekly lab sessions and office hours for Basic Algorithms and Data Structures (CPSC 221), enhancing coding and problem-solving skills for students through practical examples and in-depth solutions",
-        technologies: ["C++"]
-    },
-    {
-        role: "Full Stack Software Developer Intern @ Powerex",
-        employmentDate: "Sept 2023 - April 2024",
-        location: "Vancouver, BC",
-        companyLink: "https://powerex.com",
-        description: "Developed scalable backend data processing pipelines, architected internal full stack projects for data manipulation, and implemented robust web scrapers for data collection/ingestion",
-        technologies: ["C# (.NET)", "Python", "React", "Azure", "MSSQL", "Snowflake"]
-    }
-]
+  {
+    role: "Production Engineer Intern",
+    company: "Meta",
+    employmentDate: "Jun 2026 - Aug 2026",
+    location: "Vancouver, BC",
+    companyLink: "https://www.meta.com/",
+    description: "Distribution Layer",
+    technologies: ["Coming Soon"],
+  },
+  {
+    role: "Undergraduate Teaching Assistant",
+    company: "UBC",
+    employmentDate: "Jan 2026 - Apr 2026",
+    location: "Vancouver, BC",
+    companyLink: "https://ubc.ca",
+    description: "CPSC 317: Introduction to Computer Networking",
+    technologies: ["C", "Java", "Computer Networking"],
+  },
+  {
+    role: "Software Developer Intern",
+    company: "Safe Software",
+    employmentDate: "Sep 2025 – Dec 2025",
+    location: "Surrey, BC",
+    companyLink: "https://www.safe.com/",
+    description: "Transformers",
+    technologies: ["C++", "Python"],
+  },
+  {
+    role: "Software Developer Intern",
+    company: "Geotab",
+    employmentDate: "May 2025 – Aug 2025",
+    location: "Burnaby, BC",
+    companyLink: "https://www.geotab.com/",
+    description: "Optimization",
+    technologies: ["TypeScript", "Go", "C#"],
+  },
+  {
+    role: "Software Engineer Intern",
+    company: "Arista Networks",
+    employmentDate: "Jan 2025 – Apr 2025",
+    location: "Vancouver, BC",
+    companyLink: "https://www.arista.com/en/",
+    description: "EOS (Extensible Operating System) - Routing",
+    technologies: ["C++", "Python", "Linux"],
+  },
+  {
+    role: "Undergraduate Teaching Assistant",
+    company: "UBC",
+    employmentDate: "Sep 2024 – Dec 2024",
+    location: "Vancouver, BC",
+    companyLink: "https://ubc.ca",
+    description: "CPSC 221: Basic Algorithms and Data Structures",
+    technologies: ["C++", "Data Structures", "Algorithms"],
+  },
+  {
+    role: "Full Stack Software Developer Intern",
+    company: "Powerex",
+    employmentDate: "Sep 2023 – Apr 2024",
+    location: "Vancouver, BC",
+    companyLink: "https://powerex.com",
+    description: "AIM",
+    technologies: ["C# (.NET)", "Python", "React", "Azure"],
+  },
+];
 
-export default experiences
+export default experiences;
