@@ -1,1 +1,300 @@
-/* shared with Experience.css stub styles */
+.contact-container {
+  height: 100vh;
+  height: -webkit-fill-available;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+  overflow: hidden;
+}
+
+/* ─── Body ─── */
+.contact-body {
+  flex: 1;
+  min-height: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 var(--gutter) clamp(32px, 6vh, 72px);
+  overflow: hidden;
+}
+
+/* ─── Content (full width, above blob) ─── */
+.contact-left {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(32px, 5vh, 64px);
+  pointer-events: none;
+}
+
+.contact-links {
+  pointer-events: auto;
+}
+
+/* ─── Blob: absolute background element ─── */
+.contact-right {
+  position: absolute;
+  right: -8%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ─── Blob wrap ─── */
+.contact-blob-wrap {
+  position: relative;
+  width: clamp(340px, 48vw, 600px);
+  height: clamp(340px, 48vw, 600px);
+}
+
+.contact-blob-glow {
+  position: absolute;
+  inset: 8%;
+  background: radial-gradient(ellipse at center, rgba(200, 255, 0, 0.07) 0%, transparent 68%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.contact-blob-wrap canvas {
+  position: relative;
+  z-index: 1;
+  display: block;
+}
+
+/* ─── Headline row ─── */
+.contact-headline-row {
+  display: block;
+}
+
+/* ─── Headline ─── */
+.contact-headline {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  line-height: 0.92;
+}
+
+.contact-line {
+  font-family: var(--font-display);
+  font-size: clamp(64px, 12vw, 160px);
+  color: var(--text);
+  letter-spacing: 0.01em;
+  line-height: 0.92;
+  margin: 0;
+}
+
+.contact-line.accent {
+  color: var(--text);
+}
+
+.contact-dot {
+  color: var(--accent);
+}
+
+/* ─── Links list ─── */
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 720px;
+}
+
+.contact-rule {
+  height: 1px;
+  background: var(--border);
+  width: 100%;
+  transform-origin: left;
+}
+
+.contact-link-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-link-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 0;
+  text-decoration: none;
+  transition: background 0.2s;
+  position: relative;
+}
+
+.contact-link-row::before {
+  content: '';
+  position: absolute;
+  left: -12px;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: var(--accent);
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.25s ease;
+}
+
+.contact-link-row:hover::before {
+  transform: scaleY(1);
+}
+
+.contact-link-label {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--text-muted);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  width: 90px;
+  flex-shrink: 0;
+  transition: color 0.2s;
+}
+
+.contact-link-display {
+  font-family: var(--font-display);
+  font-size: clamp(18px, 2.4vw, 30px);
+  color: var(--text);
+  letter-spacing: 0.01em;
+  line-height: 1;
+  flex: 1;
+  transition: color 0.2s;
+}
+
+.contact-link-arrow {
+  font-size: 18px;
+  color: var(--text-muted);
+  flex-shrink: 0;
+  transition: color 0.2s, transform 0.2s;
+  line-height: 1;
+  margin-left: auto;
+}
+
+.contact-link-row:hover .contact-link-label {
+  color: var(--text-mid);
+}
+
+.contact-link-row:hover .contact-link-display {
+  color: var(--accent);
+}
+
+.contact-link-row:hover .contact-link-arrow {
+  color: var(--accent);
+  transform: translate(3px, -3px);
+}
+
+/* ─── Footer ─── */
+.contact-footer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px var(--gutter);
+  border-top: 1px solid var(--border);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--text-muted);
+  letter-spacing: 0.1em;
+  flex-shrink: 0;
+}
+
+.contact-footer-sep {
+  color: var(--border);
+}
+
+
+/* ════════════════════════════════════════
+   RESPONSIVE
+   ════════════════════════════════════════ */
+
+/* ─── Tablet landscape (≤ 1024px) ─── */
+@media (max-width: 1024px) {
+  .contact-blob-wrap {
+    width: clamp(300px, 42vw, 480px);
+    height: clamp(300px, 42vw, 480px);
+  }
+}
+
+/* ─── Tablet portrait / large mobile (≤ 768px) ─── */
+@media (max-width: 768px) {
+  .contact-body {
+    align-items: flex-start;
+    padding-top: clamp(24px, 4vh, 40px);
+  }
+
+  .contact-left {
+    gap: clamp(24px, 4vh, 40px);
+  }
+
+  /* Headline + blob sit side-by-side; align-items: center handles vertical centering */
+  .contact-headline-row {
+    display: flex;
+    align-items: center;
+  }
+
+  .contact-headline {
+    flex: 1;
+  }
+
+  /* Blob: in normal flow, sized to match headline height */
+  .contact-right {
+    position: static;
+    transform: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    flex-shrink: 0;
+  }
+
+  .contact-blob-wrap {
+    width: clamp(120px, 38vw, 200px);
+    height: clamp(120px, 38vw, 200px);
+    pointer-events: none;
+  }
+
+  .contact-link-label {
+    width: 72px;
+    font-size: 9px;
+  }
+
+  .contact-link-row {
+    padding: 14px 0;
+  }
+
+  .contact-link-display {
+    font-size: clamp(16px, 4vw, 24px);
+  }
+}
+
+/* ─── Mobile (≤ 480px) ─── */
+@media (max-width: 480px) {
+  .contact-link-label {
+    display: none;
+  }
+
+  .contact-link-row {
+    gap: 10px;
+    padding: 12px 0;
+  }
+
+  .contact-link-display {
+    font-size: clamp(15px, 4.5vw, 22px);
+    word-break: break-all;
+  }
+
+  .contact-footer {
+    padding: 12px var(--gutter);
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+}
+
+/* ─── Small mobile (≤ 380px) ─── */
+@media (max-width: 380px) {
+  .contact-line {
+    font-size: clamp(52px, 14vw, 64px);
+  }
+}

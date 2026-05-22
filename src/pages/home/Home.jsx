@@ -86,7 +86,7 @@ function Home() {
       .to(
         blobWrapRef.current,
         {
-          opacity: isMobile ? 0.18 : 1,
+          opacity: 1,
           scale: 1,
           y: 0,
           duration: 1.0,

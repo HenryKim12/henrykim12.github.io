@@ -12,7 +12,8 @@
 }
 
 .exp-row:hover .tech-tag,
-.exp-row.open .tech-tag {
+.exp-row.open .tech-tag,
+.project-card:hover .tech-tag {
   border-color: var(--border);
   color: var(--text-mid);
 }

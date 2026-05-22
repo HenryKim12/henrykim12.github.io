@@ -1,1 +1,220 @@
-/* shared with Experience.css stub styles */
+.projects-container {
+  height: 100vh;
+  height: -webkit-fill-available;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+  overflow: hidden;
+}
+
+/* ─── Scrollable area ─── */
+.projects-scroll {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 0 var(--gutter) var(--gutter);
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) transparent;
+}
+
+.projects-scroll::-webkit-scrollbar { width: 2px; }
+.projects-scroll::-webkit-scrollbar-track { background: transparent; }
+.projects-scroll::-webkit-scrollbar-thumb { background: var(--border); }
+
+/* ─── Grid wrapper — 1px gaps via background trick ─── */
+.projects-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+}
+
+/* ─── Row 1: featured (3fr) + two stacked (2fr) ─── */
+.projects-row-1 {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 1px;
+  background: var(--border);
+}
+
+.projects-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  background: var(--border);
+}
+
+/* ─── Row 2: three equal cards ─── */
+.projects-row-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1px;
+  background: var(--border);
+}
+
+/* ─── Individual card ─── */
+.project-card {
+  display: block;
+  text-decoration: none;
+  background: var(--bg);
+  overflow: hidden;
+  transition: background 0.2s ease;
+  cursor: pointer;
+}
+
+.project-card:hover {
+  background: var(--surface);
+}
+
+.card-inner {
+  padding: 20px 22px 22px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* ─── Number ─── */
+.card-num {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: 0.2em;
+  flex-shrink: 0;
+  transition: opacity 0.2s;
+}
+
+/* ─── Title block ─── */
+.card-titles {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.card-title {
+  font-family: var(--font-display);
+  font-size: clamp(20px, 2.8vw, 32px);
+  color: var(--text);
+  line-height: 1;
+  letter-spacing: 0.01em;
+}
+
+.card-subtitle {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--text-muted);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* ─── Description — wipes in from bottom on hover ─── */
+.card-desc {
+  clip-path: inset(0 0 100% 0);
+  transition: clip-path 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  flex-shrink: 0;
+}
+
+.project-card:hover .card-desc {
+  clip-path: inset(0 0 0% 0);
+}
+
+.card-desc p {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-style: italic;
+  color: var(--text-mid);
+  line-height: 1.65;
+  margin-bottom: 5px;
+}
+
+.card-desc p:last-child {
+  margin-bottom: 0;
+}
+
+/* ─── Footer ─── */
+.card-footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 10px;
+  flex-shrink: 0;
+  margin-top: auto;
+  padding-top: 4px;
+}
+
+.card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.card-arrow {
+  font-size: 16px;
+  color: var(--text-muted);
+  flex-shrink: 0;
+  transition: color 0.2s, transform 0.2s;
+  line-height: 1;
+}
+
+.project-card:hover .card-arrow {
+  color: var(--accent);
+  transform: translate(2px, -2px);
+}
+
+
+/* ════════════════════════════════════════
+   RESPONSIVE
+   ════════════════════════════════════════ */
+
+/* ─── Tablet landscape (≤ 1024px) ─── */
+@media (max-width: 1024px) {
+  .projects-row-1 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .card-title {
+    font-size: clamp(18px, 2.5vw, 26px);
+  }
+}
+
+/* ─── Tablet portrait / large mobile (≤ 768px) ─── */
+@media (max-width: 768px) {
+  /* Flatten everything into a 2-column grid */
+  .projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+  }
+
+  .projects-row-1,
+  .projects-row-2,
+  .projects-stack {
+    display: contents;
+  }
+
+  /* Reveal description on mobile via tap — use :focus-within fallback */
+  .card-desc {
+    clip-path: inset(0 0 100% 0);
+  }
+
+  .project-card:active .card-desc {
+    clip-path: inset(0 0 0% 0);
+  }
+}
+
+/* ─── Mobile (≤ 480px) ─── */
+@media (max-width: 480px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card-inner {
+    padding: 16px 18px 18px;
+  }
+
+  /* Always show description on single-column mobile */
+  .card-desc {
+    clip-path: inset(0 0 0% 0);
+  }
+}
